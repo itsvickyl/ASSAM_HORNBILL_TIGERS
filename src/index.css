@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===================== BASE RESET ===================== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    @apply bg-white text-ink antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: #C9A227;
+    color: #fff;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F9F9F9;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #5B0000;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7A0B0B;
+  }
+}
+
+/* ===================== COMPONENT CLASSES ===================== */
+@layer components {
+  /* Gold Divider */
+  .gold-divider {
+    @apply w-full h-px;
+    background: #C9A227;
+  }
+
+  .gold-divider-thick {
+    @apply w-full;
+    height: 2px;
+    background: #C9A227;
+  }
+
+  /* Tiger Stripe Overlay */
+  .tiger-stripe {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 20px,
+      rgba(0, 0, 0, 0.06) 20px,
+      rgba(0, 0, 0, 0.06) 40px
+    );
+  }
+
+  .tiger-stripe-light {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 25px,
+      rgba(255, 255, 255, 0.04) 25px,
+      rgba(255, 255, 255, 0.04) 50px
+    );
+  }
+
+  /* Section Header with gold flanking lines */
+  .section-header-flanked {
+    @apply flex items-center gap-6;
+  }
+
+  .section-header-flanked::before,
+  .section-header-flanked::after {
+    content: '';
+    @apply flex-1 h-px;
+    background: #C9A227;
+  }
+
+   /* Card base */
+  .card {
+    @apply bg-white rounded-premium shadow-soft transition-all duration-300;
+  }
+
+  .card:hover {
+    @apply shadow-soft-hover;
+  }
+
+  /* Glass card */
+  .card-glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-premium shadow-soft transition-all duration-300 text-white;
+  }
+
+  .card-glass:hover {
+    @apply bg-white/10 border-white/20 shadow-soft-hover;
+  }
+
+  /* Maroon card */
+  .card-maroon {
+    @apply bg-primary rounded-premium shadow-soft text-white;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-maroon::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 20px,
+      rgba(255, 255, 255, 0.03) 20px,
+      rgba(255, 255, 255, 0.03) 40px
+    );
+    pointer-events: none;
+  }
+
+  /* Button styles */
+  .btn-gold {
+    @apply bg-accent text-ink font-heading text-base md:text-xl tracking-wider px-5 md:px-8 py-2.5 md:py-3 rounded-premium 
+           transition-all duration-300 uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  .btn-gold:hover {
+    @apply bg-accent-dark shadow-elevated;
+    transform: translateY(-2px);
+  }
+
+  .btn-outline {
+    @apply border-2 border-white text-white font-heading text-base md:text-xl tracking-wider px-5 md:px-8 py-2.5 md:py-3 rounded-premium 
+           transition-all duration-300 uppercase bg-transparent;
+    letter-spacing: 1.5px;
+  }
+
+  .btn-outline:hover {
+    @apply bg-white text-primary;
+    transform: translateY(-2px);
+  }
+
+  .btn-outline-gold {
+    @apply border-2 border-accent text-accent font-heading text-base md:text-xl tracking-wider px-5 md:px-8 py-2.5 md:py-3 rounded-premium 
+           transition-all duration-300 uppercase bg-transparent;
+    letter-spacing: 1.5px;
+  }
+
+  .btn-outline-gold:hover {
+    @apply bg-accent text-ink;
+    transform: translateY(-2px);
+  }
+
+  /* Grayscale to color hover */
+  .grayscale-hover {
+    @apply grayscale transition-all duration-500;
+  }
+
+  .grayscale-hover:hover {
+    @apply grayscale-0;
+  }
+
+  /* Gold underline slide */
+  .nav-link {
+    @apply relative font-heading text-lg tracking-wider uppercase transition-colors duration-300;
+    letter-spacing: 1.5px;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 transition-all duration-300;
+    height: 2px;
+    background: #C9A227;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply w-full;
+  }
+
+  /* Stat counter */
+  .stat-counter {
+    @apply font-heading text-stat text-accent;
+  }
+
+  /* Masonry grid */
+  .masonry-grid {
+    columns: 1;
+    column-gap: 16px;
+  }
+
+  @media (min-width: 640px) {
+    .masonry-grid {
+      columns: 2;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .masonry-grid {
+      columns: 3;
+    }
+  }
+
+  .masonry-grid > * {
+    break-inside: avoid;
+    margin-bottom: 16px;
+  }
+
+  /* Image zoom on hover */
+  .img-zoom {
+    @apply overflow-hidden rounded-premium;
+  }
+
+  .img-zoom img {
+    @apply transition-transform duration-700 w-full h-full object-cover;
+  }
+
+  .img-zoom:hover img {
+    @apply scale-110;
+  }
+
+  /* Skeleton loader */
+  .skeleton {
+    @apply animate-pulse rounded-premium;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s ease-in-out infinite;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  /* Full-screen overlay */
+  .overlay-dark {
+    @apply fixed inset-0 bg-black/60 z-40 transition-opacity duration-300;
+  }
+
+  /* Status badges */
+  .badge-live {
+    @apply bg-red-600 text-white text-xs font-body font-semibold px-3 py-1 rounded-full uppercase tracking-widest;
+    animation: pulse 2s infinite;
+  }
+
+  .badge-upcoming {
+    @apply bg-accent/20 text-accent text-xs font-body font-semibold px-3 py-1 rounded-full uppercase tracking-widest;
+  }
+
+  .badge-completed {
+    @apply bg-gray-200 text-gray-600 text-xs font-body font-semibold px-3 py-1 rounded-full uppercase tracking-widest;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+
+  /* ===================== ANGULAR NAVBAR ===================== */
+  /* Hexagonal / cut-corner scrolled navbar shape */
+  .nav-hex-scrolled {
+    clip-path: polygon(
+      16px 0%, calc(100% - 16px) 0%,
+      100% 50%,
+      calc(100% - 16px) 100%, 16px 100%,
+      0% 50%
+    );
+    position: relative;
+  }
+
+  /* Inner content container with inset to show the "border" */
+  .nav-hex-scrolled-inner {
+    clip-path: polygon(
+      17px 1px, calc(100% - 17px) 1px,
+      calc(100% - 1px) 50%,
+      calc(100% - 17px) calc(100% - 1px), 17px calc(100% - 1px),
+      1px 50%
+    );
+  }
+
+  /* Angular cut-corner nav link tabs */
+  .nav-tab-angular {
+    clip-path: polygon(
+      8px 0%, calc(100% - 8px) 0%,
+      100% 50%,
+      calc(100% - 8px) 100%, 8px 100%,
+      0% 50%
+    );
+  }
+
+  /* Angular CTA button */
+  .btn-angular {
+    clip-path: polygon(
+      12px 0%, calc(100% - 12px) 0%,
+      100% 50%,
+      calc(100% - 12px) 100%, 12px 100%,
+      0% 50%
+    );
+  }
+
+  /* Angular hamburger wrapper */
+  .hamburger-angular {
+    clip-path: polygon(
+      6px 0%, calc(100% - 6px) 0%,
+      100% 50%,
+      calc(100% - 6px) 100%, 6px 100%,
+      0% 50%
+    );
+  }
+
+  /* Angled accent bar for unscrolled state */
+  .nav-accent-bar {
+    clip-path: polygon(0% 0%, 100% 0%, 96% 100%, 4% 100%);
+  }
+
+  @keyframes hex-glow-pulse {
+    0%, 100% { box-shadow: 0 0 20px rgba(234, 179, 8, 0.15); }
+    50% { box-shadow: 0 0 35px rgba(234, 179, 8, 0.3); }
+  }
+
+  .nav-hex-scrolled {
+    animation: hex-glow-pulse 3s ease-in-out infinite;
+  }
+}
+
+/* ===================== UTILITIES ===================== */
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  }
+
+  .tracking-editorial {
+    letter-spacing: 2px;
+  }
+
+  .tracking-button {
+    letter-spacing: 1.5px;
+  }
+}
+
+/* ===================== REDUCED MOTION ===================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-marquee {
+    animation: none !important;
+  }
+}
+
