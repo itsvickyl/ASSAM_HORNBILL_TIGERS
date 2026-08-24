@@ -23,6 +23,7 @@ const Footer = ({ onOpenTickets }) => {
           <ul className="space-y-2 md:space-y-3 font-body text-sm font-light text-gray-300">
             <li><Link to="/squad" className="hover:text-accent transition-colors">The Squad</Link></li>
             <li><Link to="/history" className="hover:text-accent transition-colors">Team History</Link></li>
+            <li><a href="/#sponsors" className="hover:text-accent transition-colors">Official Sponsors</a></li>
             <li>
               <a 
                 href="https://isclcricket.in/" 

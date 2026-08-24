@@ -11,19 +11,19 @@ const defaultCardData = [
   {
     color: '#2A0000',
     title: 'Historic 7-Wicket Victory in Match 35',
-    description: 'Captain Tush Sobour smashes 44 off 25 balls with 2 massive sixes to chase down 74 against Delhi Dare Strikers at Kini Sports Arena.',
+    description: 'Captain Tushar Sobor smashes 44 off 25 balls (3 fours, 2 sixes) to chase down 74 against Delhi Dare Strikers at Kini Sports Arena.',
     label: 'Match Report'
   },
   {
     color: '#1E0000',
-    title: 'Captain Tush Sobour Crowned Man of the Match',
-    description: 'Post-match ceremony honors the skipper for his match-winning leadership and clutch six to seal Assam’s first tournament win.',
+    title: 'Captain Tushar Sobor Crowned Man of the Match',
+    description: 'Skipper awarded Player of the Match for his clutch 44*(25) knock and outstanding leadership under heavy night dew.',
     label: 'Player of the Match'
   },
   {
     color: '#220000',
     title: 'Disciplined Bowling Breakthrough',
-    description: 'Tipu Sultan and Kamal Gogoi apply relentless pressure, restricting Delhi to 73/6 before dew affected the outfield.',
+    description: 'Tipu Sultan (2/1 in 1 ov), Kamal Gogoi (2/22 in 2 ov), Anand Chetri (1/13), and Husamuddin restrict Delhi Dare Strikers to 73/6.',
     label: 'Bowling Highlights'
   },
   {

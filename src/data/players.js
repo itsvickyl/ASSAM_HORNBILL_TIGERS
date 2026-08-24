@@ -27,7 +27,7 @@ export const players = [
     strikeRate: 138.4,
     economy: 6.9,
     image: "/players/ANAND CHETRY.png",
-    bio: "Dynamic spin-bowling all-rounder who is crucial in controlling the run rate in the middle overs."
+    bio: "Dynamic spin-bowling all-rounder who broke Delhi Dare Strikers' middle order with crucial 1/13 in Match 35, excelling in tight conditions."
   },
   {
     id: 3,
@@ -78,16 +78,16 @@ export const players = [
     id: 6,
     name: "Hussam Uddin",
     number: "18",
-    role: "Wicket Keeper",
+    role: "Bowler / Wicket Keeper",
     battingStyle: "Right-hand bat",
-    bowlingStyle: "None",
+    bowlingStyle: "Right-arm medium",
     matches: 70,
     runs: 1650,
-    wickets: 0,
+    wickets: 24,
     strikeRate: 136.8,
-    economy: 0,
+    economy: 6.8,
     image: "/players/HUSSAM UDDIN.png",
-    bio: "Reliable wicketkeeper-batter with lightning-fast reflexes and neat glovework behind the stumps."
+    bio: "Key bowler who opened the bowling attack in Match 35 vs Delhi Dare Strikers with an ultra-disciplined and economical opening spell."
   },
   {
     id: 7,
@@ -117,7 +117,7 @@ export const players = [
     strikeRate: 98.5,
     economy: 6.5,
     image: "/players/KAMAL GOGOI.png",
-    bio: "Strategic spinner who relies on subtle flight and spin variations to pick up crucial wickets."
+    bio: "Decisive bowler who delivered a masterclass spell taking 2 wickets for 22 runs in his 2 overs against Delhi Dare Strikers in Match 35."
   },
   {
     id: 9,
@@ -222,13 +222,13 @@ export const players = [
     strikeRate: 156.2,
     economy: 7.9,
     image: "/players/TIPU SULTAN.png",
-    bio: "A powerful lower-order left-handed batsman and a quick bowler who thrives under tight situations."
+    bio: "Fiery fast-bowling all-rounder who delivered one of ISCL Season 1's most devastating spells in Match 35, bagging 2 wickets for just 1 run (2/1 in 1 ov) against Delhi Dare Strikers."
   },
   {
     id: 16,
-    name: "Tush Sobour",
+    name: "Tushar Sobor",
     isCaptain: true,
-    number: "17",
+    number: "23",
     role: "All-Rounder (Captain)",
     battingStyle: "Right-hand bat",
     bowlingStyle: "Right-arm fast",
@@ -237,8 +237,8 @@ export const players = [
     wickets: 60,
     strikeRate: 164.8,
     economy: 7.5,
-    honors: "Man of the Match — ISCL Season 1 (44 runs off 25 balls vs Delhi)",
+    honors: "Man of the Match — ISCL Season 1 Match 35 (44 runs off 25 balls vs Delhi)",
     image: "/players/TUSHAL SOBOR.png",
-    bio: "Inspirational captain of the Hornbill Tigers (Assam). Awarded Man of the Match in ISCL Season 1 Match 35 for a thrilling 44 off 25 balls against Delhi Dare Strikers, which included a clutch death-overs slog six and a towering match-ending six to seal a 7-wicket victory."
+    bio: "Inspirational captain and leader of the Assam Hornbill Tigers. Awarded Man of the Match in ISCL Season 1 Match 35 for an incredible match-winning 44 runs off 25 balls (3 fours, 2 sixes) to successfully chase down 74 against Delhi Dare Strikers."
   }
 ];

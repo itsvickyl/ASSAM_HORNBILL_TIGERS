@@ -82,7 +82,7 @@ const Home = () => {
               href="https://isclcricket.in/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500 text-ink font-heading text-lg sm:text-xl uppercase tracking-wider px-8 py-3.5 rounded-full font-bold shadow-[0_0_25px_rgba(234,179,8,0.4)] hover:shadow-[0_0_35px_rgba(234,179,8,0.7)] hover:scale-105 active:scale-95 transition-all whitespace-nowrap shrink-0"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500 text-ink font-heading text-base sm:text-lg md:text-xl uppercase tracking-wider px-6 sm:px-8 py-3 sm:py-3.5 rounded-full font-bold shadow-[0_0_25px_rgba(234,179,8,0.4)] hover:shadow-[0_0_35px_rgba(234,179,8,0.7)] hover:scale-105 active:scale-95 transition-all shrink-0 text-center"
             >
               <span>Visit isclcricket.in</span>
               <span className="text-base">↗</span>

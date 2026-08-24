@@ -2,7 +2,7 @@ const FilterBar = ({ activeFilter, setActiveFilter }) => {
   const filters = ['ALL', 'BATTERS', 'ALL-ROUNDERS', 'BOWLERS', 'WICKET KEEPERS'];
 
   return (
-    <div className="flex gap-4 sm:gap-6 md:gap-8 border-b border-white/10 mb-8 md:mb-12 relative overflow-x-auto pb-0 -mx-4 px-4 sm:mx-0 sm:px-0" role="tablist">
+    <div className="flex gap-3 sm:gap-6 md:gap-8 border-b border-white/10 mb-8 md:mb-12 relative overflow-x-auto pb-0 -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-hide" role="tablist" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
       {filters.map((filter) => (
         <button
           key={filter}

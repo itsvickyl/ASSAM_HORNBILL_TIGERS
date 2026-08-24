@@ -2,10 +2,10 @@ export const newsItems = [
   {
     id: 1,
     type: "news",
-    title: "Captain Tush Sobour Smashes 44*(25) with 2 Huge Sixes to Clinch Win Over Delhi",
+    title: "Captain Tushar Sobor Smashes 44*(25) as Hornbill Tigers Chase Down 74 vs Delhi",
     date: "Dec 11, 2025",
     category: "Match Report",
-    excerpt: "Assam captain Tush Sobour blasted 44 runs off 25 balls, smashing a monster slog hit for six in the death overs and finishing the chase in style with another towering six to seal a 7-wicket triumph."
+    excerpt: "Assam skipper Tushar Sobor struck 44 off 25 (3 fours, 2 sixes) to earn Man of the Match after Tipu Sultan (2/1), Kamal Gogoi (2/22), Anand Chetri (1/13), and Husamuddin restricted Delhi to 73/6."
   },
   {
     id: 2,

@@ -122,7 +122,7 @@ const Navbar = ({ onOpenTickets }) => {
           </div>
 
           {/* ====== Desktop CTA — Rounded Button ====== */}
-          <div className="hidden lg:block">
+          <div className="hidden xl:block">
             <button
               onClick={onOpenTickets}
               className="group relative overflow-hidden rounded-full bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500 text-ink font-body text-[11px] md:text-xs font-black uppercase tracking-widest py-2.5 px-7 transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(234,179,8,0.4)] hover:shadow-[0_0_35px_rgba(234,179,8,0.7)] whitespace-nowrap border border-amber-300/40"

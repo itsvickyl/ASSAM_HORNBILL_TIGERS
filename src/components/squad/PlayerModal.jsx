@@ -25,38 +25,39 @@ const PlayerModal = ({ player, onClose }) => {
   if (!player) return null;
 
   return (
-    <>
-      {/* Backdrop */}
+    <div 
+      className="fixed inset-0 z-[70] flex items-center justify-center p-3 sm:p-4 md:p-6 bg-black/80 backdrop-blur-md animate-fade-in overflow-y-auto"
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="player-modal-name"
+    >
       <div 
-        className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 animate-fade-in"
-        onClick={onClose}
-      ></div>
-      
-      {/* Modal */}
-      <div 
-        className="fixed inset-0 z-50 flex items-center justify-center p-4 pointer-events-none"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="player-modal-name"
+        ref={modalRef}
+        className="relative bg-[#200000] rounded-2xl shadow-2xl w-full max-w-[800px] my-auto overflow-hidden border border-white/20 text-white animate-fade-in-up max-h-[90vh] flex flex-col"
+        onClick={(e) => e.stopPropagation()}
       >
-        <div 
-          ref={modalRef}
-          className="bg-primary rounded-2xl shadow-2xl w-full max-w-[800px] max-h-[90vh] overflow-y-auto pointer-events-auto relative animate-fade-in-up border border-white/10"
-          onClick={(e) => e.stopPropagation()}
-        >
-          {/* Close Button */}
-          <button 
-            onClick={onClose}
-            className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-black/40 border border-white/20 flex items-center justify-center text-white hover:text-accent hover:border-accent transition-all"
-            aria-label="Close player profile"
-          >
-            ✕
-          </button>
+        {/* Top Gold Accent Strip */}
+        <div className="h-1.5 bg-gradient-to-r from-primary via-accent to-primary shrink-0" />
 
-          {/* Hero Section */}
+        {/* Close Button — always visible on top right */}
+        <button 
+          type="button"
+          onClick={(e) => {
+            e.stopPropagation();
+            onClose();
+          }}
+          className="absolute top-4 right-4 z-30 w-10 h-10 rounded-full bg-black/80 border border-white/30 flex items-center justify-center text-white hover:text-black hover:bg-accent hover:border-accent transition-all duration-300 shadow-xl cursor-pointer text-base font-bold active:scale-90"
+          aria-label="Close player profile"
+        >
+          ✕
+        </button>
+
+        {/* Scrollable Modal Content */}
+        <div className="overflow-y-auto flex-1">
           <div className="flex flex-col md:flex-row">
             {/* Player Image */}
-            <div className="w-full md:w-[300px] h-[300px] md:h-auto relative overflow-hidden rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none shrink-0 bg-gradient-to-b from-primary-dark to-primary">
+            <div className="w-full md:w-[300px] h-[280px] sm:h-[320px] md:h-auto relative overflow-hidden rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none shrink-0 bg-gradient-to-b from-[#3D0000] to-[#1a0000]">
               <img 
                 src={player.image} 
                 alt={player.name} 
@@ -73,13 +74,13 @@ const PlayerModal = ({ player, onClose }) => {
             {/* Info Section */}
             <div className="flex-1 p-6 md:p-8">
               {/* Header */}
-              <div className="mb-6">
+              <div className="mb-6 pr-8">
                 <span className="text-accent font-body text-xs uppercase tracking-[0.3em] font-semibold">{player.role}</span>
-                <h2 id="player-modal-name" className="font-heading text-4xl md:text-5xl text-white mt-1 leading-tight">{player.name}</h2>
+                <h2 id="player-modal-name" className="font-heading text-3xl sm:text-4xl md:text-5xl text-white mt-1 leading-tight">{player.name}</h2>
               </div>
 
               {/* Bio */}
-              <p className="font-body text-sm text-gray-300 font-light leading-relaxed mb-6 border-l-2 border-accent/40 pl-4">
+              <p className="font-body text-xs sm:text-sm text-gray-300 font-light leading-relaxed mb-6 border-l-2 border-accent/40 pl-4">
                 {player.bio}
               </p>
 
@@ -98,13 +99,13 @@ const PlayerModal = ({ player, onClose }) => {
               <div className="mb-6">
                 <h4 className="font-heading text-lg text-accent uppercase tracking-wider mb-3">Technical</h4>
                 <div className="grid grid-cols-2 gap-3">
-                  <div className="bg-black/20 rounded-lg p-3">
+                  <div className="bg-black/30 rounded-lg p-3 border border-white/5">
                     <span className="text-gray-400 font-body text-[10px] uppercase tracking-widest block mb-1">Batting</span>
-                    <span className="text-white font-body text-sm">{player.battingStyle}</span>
+                    <span className="text-white font-body text-xs sm:text-sm font-medium">{player.battingStyle}</span>
                   </div>
-                  <div className="bg-black/20 rounded-lg p-3">
+                  <div className="bg-black/30 rounded-lg p-3 border border-white/5">
                     <span className="text-gray-400 font-body text-[10px] uppercase tracking-widest block mb-1">Bowling</span>
-                    <span className="text-white font-body text-sm">{player.bowlingStyle || 'N/A'}</span>
+                    <span className="text-white font-body text-xs sm:text-sm font-medium">{player.bowlingStyle || 'N/A'}</span>
                   </div>
                 </div>
               </div>
@@ -113,29 +114,43 @@ const PlayerModal = ({ player, onClose }) => {
               <div>
                 <h4 className="font-heading text-lg text-accent uppercase tracking-wider mb-3">Career Stats</h4>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                  <div className="bg-black/20 rounded-lg p-3 text-center">
-                    <span className="text-white font-heading text-3xl block">{player.matches}</span>
+                  <div className="bg-black/30 rounded-lg p-3 text-center border border-white/5">
+                    <span className="text-white font-heading text-2xl sm:text-3xl block">{player.matches}</span>
                     <span className="text-gray-400 font-body text-[10px] uppercase tracking-widest">Matches</span>
                   </div>
-                  <div className="bg-black/20 rounded-lg p-3 text-center">
-                    <span className="text-white font-heading text-3xl block">{player.runs}</span>
+                  <div className="bg-black/30 rounded-lg p-3 text-center border border-white/5">
+                    <span className="text-white font-heading text-2xl sm:text-3xl block">{player.runs}</span>
                     <span className="text-gray-400 font-body text-[10px] uppercase tracking-widest">Runs</span>
                   </div>
-                  <div className="bg-black/20 rounded-lg p-3 text-center">
-                    <span className="text-white font-heading text-3xl block">{player.wickets}</span>
+                  <div className="bg-black/30 rounded-lg p-3 text-center border border-white/5">
+                    <span className="text-white font-heading text-2xl sm:text-3xl block">{player.wickets}</span>
                     <span className="text-gray-400 font-body text-[10px] uppercase tracking-widest">Wickets</span>
                   </div>
-                  <div className="bg-black/20 rounded-lg p-3 text-center">
-                    <span className="text-accent font-heading text-3xl block">{player.strikeRate}</span>
+                  <div className="bg-black/30 rounded-lg p-3 text-center border border-white/5">
+                    <span className="text-accent font-heading text-2xl sm:text-3xl block">{player.strikeRate}</span>
                     <span className="text-gray-400 font-body text-[10px] uppercase tracking-widest">Strike Rate</span>
                   </div>
                 </div>
+              </div>
+
+              {/* Bottom Action / Close */}
+              <div className="mt-8 pt-4 border-t border-white/10 flex justify-end">
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onClose();
+                  }}
+                  className="btn-gold py-2.5 px-6 rounded-xl text-xs sm:text-sm font-bold uppercase tracking-wider cursor-pointer hover:scale-105 active:scale-95 transition-all"
+                >
+                  Close Profile
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

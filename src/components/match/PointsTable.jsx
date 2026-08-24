@@ -38,13 +38,13 @@ const PointsTable = () => {
                 <td className="py-3.5 px-2 text-center font-heading text-base text-gray-300">
                   {row.pos}
                 </td>
-                <td className="py-3.5 px-3 flex items-center gap-3">
-                  <div className={`w-7 h-7 rounded-full flex items-center justify-center font-heading text-xs text-white ${
+                <td className="py-3.5 px-3 flex items-center gap-2 sm:gap-3">
+                  <div className={`w-7 h-7 rounded-full flex items-center justify-center font-heading text-xs text-white shrink-0 ${
                     row.isUserTeam ? 'bg-primary border border-accent' : 'bg-gray-800'
                   }`}>
                     {row.code}
                   </div>
-                  <span className={`tracking-wide ${row.isUserTeam ? 'text-accent font-bold' : 'text-white'}`}>
+                  <span className={`tracking-wide truncate max-w-[100px] sm:max-w-none ${row.isUserTeam ? 'text-accent font-bold' : 'text-white'}`}>
                     {row.team}
                   </span>
                 </td>

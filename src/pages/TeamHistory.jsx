@@ -140,7 +140,7 @@ const TeamHistory = () => {
       </header>
 
       {/* ═══════ FIXED HUD OVERLAY ═══════ */}
-      <div className="fixed top-24 right-4 sm:right-6 z-50 bg-[#3D0000]/90 backdrop-blur-xl border border-accent/15 px-3 sm:px-4 py-3 shadow-2xl"
+      <div className="fixed top-20 sm:top-24 right-2 sm:right-6 z-50 bg-[#3D0000]/90 backdrop-blur-xl border border-accent/15 px-2.5 sm:px-4 py-2.5 sm:py-3 shadow-2xl max-w-[160px] sm:max-w-none"
            style={{ borderRadius: '2px' }}>
         <div className="flex items-center justify-between mb-2 gap-4">
           <span className="font-body text-[9px] sm:text-[10px] uppercase tracking-[0.2em] text-gray-500 font-semibold">

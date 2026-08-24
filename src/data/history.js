@@ -43,11 +43,11 @@ export const history = [
     year: "Match 35 vs Delhi",
     title: "Disciplined Bowling & Dew Battle",
     feeling: "THE BATTLE",
-    description: "Striking back with fury against Delhi Dare Strikers, Tipu Sultan and Kamal Gogoi dismantled the opposition to restrict them to 73/6 before the team navigated heavy outfield dew.",
+    description: "Delivering a masterclass under floodlights at Kini Sports Arena, Husamuddin opened economically, Anand Chetry claimed 1/13, Kamal Gogoi took 2/22 in 2 overs, and Tipu Sultan bowled a sensational 2 wickets for just 1 run (2/1) to restrict Delhi Dare Strikers to 73/6 in 9 overs.",
     stats: [
-      { label: "Tipu Sultan", value: "Key Wkts" },
-      { label: "Kamal Gogoi", value: "Key Wkts" },
-      { label: "Delhi", value: "73/6" }
+      { label: "Tipu Sultan", value: "2/1 (1 ov)" },
+      { label: "Kamal Gogoi", value: "2/22 (2 ov)" },
+      { label: "Delhi Score", value: "73/6 (9 ov)" }
     ],
     image: "/match35-team-huddle.jpg"
   },
@@ -56,10 +56,10 @@ export const history = [
     year: "Historic Destination",
     title: "Captain's 44*(25) & Maiden Triumph",
     feeling: "THE VICTORY",
-    description: "Captain Tush Sobour hammered 2 massive sixes to finish 74/3, sealing Assam's historic first ISCL victory by 7 wickets and receiving the prestigious Man of the Match award.",
+    description: "Chasing 74 in heavy dew, Captain Tushar Sobor delivered a hero's knock of 44 runs off 25 balls with 3 fours and 2 towering sixes, earning Man of the Match honors and finishing the chase 74/3 to seal Assam's maiden ISCL victory by 7 wickets.",
     stats: [
-      { label: "Tush Sobour", value: "44*(25)" },
-      { label: "Sixes", value: "2" },
+      { label: "Tushar Sobor", value: "44*(25)" },
+      { label: "Boundaries", value: "3x4, 2x6" },
       { label: "Result", value: "Won by 7 wkts" }
     ],
     image: "/tush-celebration.jpg"
