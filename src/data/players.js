@@ -6,13 +6,13 @@ export const players = [
     role: "Batter",
     battingStyle: "Right-hand bat",
     bowlingStyle: "Right-arm offbreak",
-    matches: 48,
-    runs: 1420,
-    wickets: 8,
-    strikeRate: 132.5,
-    economy: 7.2,
+    matches: 3,
+    runs: 22,
+    wickets: 0,
+    strikeRate: 125.0,
+    economy: 0,
     image: "/players/ABINASH HALOI.png",
-    bio: "A solid top-order batter with clean technique and the ability to anchor the innings under pressure."
+    bio: "Solid top-order batter who contributed 12 runs against Jharkhand Strikers and opened the innings throughout ISCL Season 1."
   },
   {
     id: 2,
@@ -21,13 +21,13 @@ export const players = [
     role: "All-Rounder",
     battingStyle: "Left-hand bat",
     bowlingStyle: "Slow left-arm orthodox",
-    matches: 55,
-    runs: 980,
-    wickets: 62,
+    matches: 3,
+    runs: 16,
+    wickets: 1,
     strikeRate: 138.4,
-    economy: 6.9,
+    economy: 6.5,
     image: "/players/ANAND CHETRY.png",
-    bio: "Dynamic spin-bowling all-rounder who broke Delhi Dare Strikers' middle order with crucial 1/13 in Match 35, excelling in tight conditions."
+    bio: "Dynamic spin-bowling all-rounder who broke Delhi Dare Strikers' middle order with a crucial 1/13 spell in Match 35."
   },
   {
     id: 3,
@@ -36,13 +36,13 @@ export const players = [
     role: "Batter",
     battingStyle: "Right-hand bat",
     bowlingStyle: "Right-arm fast-medium",
-    matches: 62,
-    runs: 1850,
-    wickets: 15,
-    strikeRate: 145.2,
-    economy: 8.4,
+    matches: 3,
+    runs: 15,
+    wickets: 0,
+    strikeRate: 130.0,
+    economy: 0,
     image: "/players/ASHIK ALI.png",
-    bio: "Aggressive middle-order hitter who can accelerate the run-rate effortlessly in the death overs."
+    bio: "Aggressive middle-order striker who provided vital lower-order acceleration during the Season 1 campaign."
   },
   {
     id: 4,
@@ -51,13 +51,13 @@ export const players = [
     role: "Bowler",
     battingStyle: "Right-hand bat",
     bowlingStyle: "Right-arm fast",
-    matches: 34,
-    runs: 150,
-    wickets: 52,
-    strikeRate: 110.0,
-    economy: 7.8,
+    matches: 3,
+    runs: 3,
+    wickets: 1,
+    strikeRate: 100.0,
+    economy: 7.2,
     image: "/players/DHYAN SONOWAL.png",
-    bio: "A young pace sensation known for raw speed, steep bounce, and sharp bouncers."
+    bio: "Young pace sensation who generated sharp bounce and steep pace under floodlights at Kini Sports Arena."
   },
   {
     id: 5,
@@ -66,13 +66,13 @@ export const players = [
     role: "Batter",
     battingStyle: "Left-hand bat",
     bowlingStyle: "None",
-    matches: 40,
-    runs: 1210,
+    matches: 3,
+    runs: 14,
     wickets: 0,
-    strikeRate: 128.6,
+    strikeRate: 120.0,
     economy: 0,
     image: "/players/FARHAD HASAN.png",
-    bio: "Elegant left-handed opening batter with excellent footwork and classical timing."
+    bio: "Left-handed opening batter known for clean footwork, timing, and composure against new-ball attacks."
   },
   {
     id: 6,
@@ -81,13 +81,13 @@ export const players = [
     role: "Bowler / Wicket Keeper",
     battingStyle: "Right-hand bat",
     bowlingStyle: "Right-arm medium",
-    matches: 70,
-    runs: 1650,
-    wickets: 24,
-    strikeRate: 136.8,
-    economy: 6.8,
+    matches: 3,
+    runs: 12,
+    wickets: 1,
+    strikeRate: 118.0,
+    economy: 5.8,
     image: "/players/HUSSAM UDDIN.png",
-    bio: "Key bowler who opened the bowling attack in Match 35 vs Delhi Dare Strikers with an ultra-disciplined and economical opening spell."
+    bio: "Opened the bowling attack in Match 35 vs Delhi Dare Strikers with an ultra-disciplined and economical spell under pressure."
   },
   {
     id: 7,
@@ -96,13 +96,13 @@ export const players = [
     role: "All-Rounder",
     battingStyle: "Right-hand bat",
     bowlingStyle: "Right-arm medium-fast",
-    matches: 82,
-    runs: 1340,
-    wickets: 74,
-    strikeRate: 141.2,
-    economy: 7.9,
+    matches: 3,
+    runs: 10,
+    wickets: 1,
+    strikeRate: 125.0,
+    economy: 7.0,
     image: "/players/JINTU AHMED.png",
-    bio: "Vocal leader on the field, offering valuable seam-bowling options and quick lower-order runs."
+    bio: "Vocal on-field leader offering seam bowling versatility and aggressive lower-order batting options."
   },
   {
     id: 8,
@@ -111,13 +111,13 @@ export const players = [
     role: "Bowler",
     battingStyle: "Right-hand bat",
     bowlingStyle: "Right-arm offbreak",
-    matches: 45,
-    runs: 210,
-    wickets: 48,
+    matches: 3,
+    runs: 8,
+    wickets: 2,
     strikeRate: 98.5,
-    economy: 6.5,
+    economy: 7.3,
     image: "/players/KAMAL GOGOI.png",
-    bio: "Decisive bowler who delivered a masterclass spell taking 2 wickets for 22 runs in his 2 overs against Delhi Dare Strikers in Match 35."
+    bio: "Decisive bowler who delivered a match-turning spell taking 2 wickets for 22 runs in 2 overs against Delhi Dare Strikers in Match 35."
   },
   {
     id: 9,
@@ -126,13 +126,13 @@ export const players = [
     role: "Bowler",
     battingStyle: "Right-hand bat",
     bowlingStyle: "Left-arm fast",
-    matches: 60,
-    runs: 310,
-    wickets: 88,
-    strikeRate: 115.0,
-    economy: 7.1,
+    matches: 3,
+    runs: 5,
+    wickets: 1,
+    strikeRate: 110.0,
+    economy: 6.8,
     image: "/players/KHANINDRA CHOUDHURY.png",
-    bio: "Experienced left-arm seamer who excels at swing bowling and delivers vital breakthroughs early on."
+    bio: "Experienced left-arm seamer who generated swing in the powerplay and provided early breakthroughs."
   },
   {
     id: 10,
@@ -141,13 +141,13 @@ export const players = [
     role: "Wicket Keeper",
     battingStyle: "Right-hand bat",
     bowlingStyle: "None",
-    matches: 32,
-    runs: 690,
+    matches: 3,
+    runs: 11,
     wickets: 0,
-    strikeRate: 152.4,
+    strikeRate: 122.0,
     economy: 0,
     image: "/players/MOTINUR ISLAM.png",
-    bio: "Counter-attacking wicketkeeper-batter capable of taking matches away from the opposition in a flash."
+    bio: "Counter-attacking wicketkeeper-batter capable of sharp glovework and brisk lower-order runs."
   },
   {
     id: 11,
@@ -156,13 +156,13 @@ export const players = [
     role: "Bowler",
     battingStyle: "Right-hand bat",
     bowlingStyle: "Right-arm legbreak",
-    matches: 28,
-    runs: 120,
-    wickets: 39,
-    strikeRate: 92.0,
-    economy: 7.3,
+    matches: 3,
+    runs: 4,
+    wickets: 1,
+    strikeRate: 95.0,
+    economy: 7.0,
     image: "/players/NASIM KHAN.png",
-    bio: "Talented leg-spinner with a dangerous googly and excellent control over his line and length."
+    bio: "Talented wrist-spinner with a dangerous googly and tight control over line and length."
   },
   {
     id: 12,
@@ -171,13 +171,13 @@ export const players = [
     role: "All-Rounder",
     battingStyle: "Right-hand bat",
     bowlingStyle: "Right-arm fast-medium",
-    matches: 50,
-    runs: 840,
-    wickets: 45,
-    strikeRate: 148.0,
-    economy: 8.1,
+    matches: 3,
+    runs: 8,
+    wickets: 1,
+    strikeRate: 130.0,
+    economy: 7.5,
     image: "/players/RAJIKUL ISLAM.png",
-    bio: "Versatile all-rounder who can break partnerships and clear the boundaries with relative ease."
+    bio: "Versatile all-rounder who can break partnerships and clear the ropes in crunch match situations."
   },
   {
     id: 13,
@@ -186,13 +186,13 @@ export const players = [
     role: "Batter",
     battingStyle: "Right-hand bat",
     bowlingStyle: "None",
-    matches: 58,
-    runs: 1720,
+    matches: 3,
+    runs: 9,
     wickets: 0,
-    strikeRate: 129.5,
+    strikeRate: 115.0,
     economy: 0,
     image: "/players/SAHID ALI.png",
-    bio: "Consistent top-order batsman known for his composure, technique, and solid presence in chases."
+    bio: "Top-order batsman recognized for his composure, compact technique, and match situation awareness."
   },
   {
     id: 14,
@@ -201,13 +201,13 @@ export const players = [
     role: "Bowler",
     battingStyle: "Right-hand bat",
     bowlingStyle: "Right-arm medium",
-    matches: 38,
-    runs: 180,
-    wickets: 40,
+    matches: 3,
+    runs: 6,
+    wickets: 2,
     strikeRate: 102.5,
-    economy: 6.8,
+    economy: 6.2,
     image: "/players/SRIMANTA.png",
-    bio: "Disciplined medium-pacer specializing in maintaining tight lines and building pressure on the batters."
+    bio: "Disciplined medium-pacer who claimed 2 key wickets against Jharkhand Strikers to keep the Tigers competitive."
   },
   {
     id: 15,
@@ -216,13 +216,13 @@ export const players = [
     role: "All-Rounder",
     battingStyle: "Left-hand bat",
     bowlingStyle: "Right-arm fast",
-    matches: 66,
-    runs: 1150,
-    wickets: 58,
-    strikeRate: 156.2,
-    economy: 7.9,
+    matches: 3,
+    runs: 18,
+    wickets: 4,
+    strikeRate: 145.0,
+    economy: 5.6,
     image: "/players/TIPU SULTAN.png",
-    bio: "Fiery fast-bowling all-rounder who delivered one of ISCL Season 1's most devastating spells in Match 35, bagging 2 wickets for just 1 run (2/1 in 1 ov) against Delhi Dare Strikers."
+    bio: "Fiery fast-bowling all-rounder who delivered one of ISCL Season 1's most devastating spells in Match 35, taking 2 wickets for just 1 run (2/1 in 1 ov) against Delhi Dare Strikers, and 2 wickets vs Jharkhand."
   },
   {
     id: 16,
@@ -232,13 +232,13 @@ export const players = [
     role: "All-Rounder (Captain)",
     battingStyle: "Right-hand bat",
     bowlingStyle: "Right-arm fast",
-    matches: 44,
-    runs: 620,
-    wickets: 60,
+    matches: 3,
+    runs: 61,
+    wickets: 1,
     strikeRate: 164.8,
     economy: 7.5,
-    honors: "Man of the Match — ISCL Season 1 Match 35 (44 runs off 25 balls vs Delhi)",
+    honors: "Man of the Match — ISCL Season 1 Match 35 (44* off 25 balls vs Delhi)",
     image: "/players/TUSHAL SOBOR.png",
-    bio: "Inspirational captain and leader of the Assam Hornbill Tigers. Awarded Man of the Match in ISCL Season 1 Match 35 for an incredible match-winning 44 runs off 25 balls (3 fours, 2 sixes) to successfully chase down 74 against Delhi Dare Strikers."
+    bio: "Inspirational captain of the Assam Hornbill Tigers. Awarded Man of the Match in Match 35 for his match-winning knock of 44* off 25 balls (3 fours, 2 sixes) to chase down 74 against Delhi Dare Strikers, scoring 61 total runs across Season 1."
   }
 ];
