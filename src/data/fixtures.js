@@ -84,28 +84,5 @@ export const fixtures = [
     youtubeId: "HSdL5xzpTNc",
     youtubeUrl: "https://www.youtube.com/watch?v=HSdL5xzpTNc",
     streamTitle: "ISCL SEASON - 1 | JHARHKAND STRIKERS vs HORNBILL TIGERS ( ASSAM ) | MATCH - 25 | DAY - 9"
-  },
-  {
-    id: 4,
-    matchNo: "Match 39",
-    tournament: "ISCL Season 1",
-    date: "Dec 18, 2025",
-    opponent: "Punjab Golden Fighters",
-    venue: "Kini Sports Arena, Bangalore",
-    status: "LIVE",
-    score: "Hornbill Tigers 58/1 (6.2) | Punjab yet to bat",
-    toss: "Hornbill Tigers opted to bat",
-    summary: "Rematch in progress under the lights at Kini Sports Arena."
-  },
-  {
-    id: 5,
-    matchNo: "Match 42",
-    tournament: "ISCL Season 1",
-    date: "Nov 25, 2026",
-    opponent: "Jharkhand Strikers",
-    venue: "Acharya Stadium, Bangalore",
-    status: "UPCOMING",
-    result: null,
-    score: null
   }
 ];

@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import FixtureCard from '../components/match/FixtureCard';
-import LiveDashboard from '../components/match/LiveDashboard';
 import StatCounters from '../components/match/StatCounters';
 import PointsTable from '../components/match/PointsTable';
 import { fixtures } from '../data/fixtures';
@@ -62,7 +61,7 @@ const MatchCenter = () => {
                   activeTab === 'all' ? 'bg-accent text-black font-bold' : 'text-gray-300 hover:text-white'
                 }`}
               >
-                All & Live
+                Match Results
               </button>
               <button 
                 role="tab"
@@ -88,12 +87,7 @@ const MatchCenter = () => {
             <PointsTable />
           </div>
         ) : (
-          <div className="space-y-12">
-            {/* Live Dashboard Section */}
-            <div>
-              <LiveDashboard />
-            </div>
-
+          <div className="space-y-8 pt-4">
             {/* Fixtures & Results List */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="lg:col-span-2 space-y-6">
