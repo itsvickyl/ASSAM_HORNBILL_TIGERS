@@ -13,44 +13,50 @@ export const fixtures = [
     manOfTheMatch: "Tushar Sobor (Captain) — 44 runs off 25 balls (3x4, 2x6)",
     summary: "Delhi Dare Strikers were restricted to 73/6 in 9 overs thanks to an economical opening spell by Husamuddin, 1/13 from Anand Chetri, 2/22 by Kamal Gogoi, and a deadly 2/1 in 1 over by Tipu Sultan, despite Delhi captain Pujesh Kapoor scoring 25 off 14 balls and Shadab Khan hitting a six. Chasing 74 in tough dew, Hornbill Tigers skipper Tushar Sobor delivered a masterclass knock of 44 runs off 25 balls (3 fours, 2 sixes) to seal the historic 7-wicket victory and earn Man of the Match honors.",
     timestamps: [
-      { time: "0:19:35", label: "Fielding: Mohit Teddy contributes with bat & takes brilliant outfield catch" },
-      { time: "0:25:36", label: "Opening Spell: Husamuddin opens bowling with a tight, economical start" },
-      { time: "0:29:43", label: "Key Breakthrough: Delhi Captain Pujesh Kapoor dismissed after 25 off 14" },
-      { time: "0:45:56", label: "Delhi Middle Order: Deep Kumar anchors the crease in the middle overs" },
-      { time: "0:49:59", label: "Wicket: Anand Chetri strikes with crucial breakthrough (1/13)" },
-      { time: "0:50:05", label: "Double Wicket: Kamal Gogoi bowls decisive spell taking 2/22 in 2 overs" },
-      { time: "0:50:09", label: "Fiery Over: Tipu Sultan delivers sensational spell with 2 wickets for just 1 run (2/1)" },
-      { time: "0:53:13", label: "Wicket: Shadab Khan dismissed after hitting a six for Delhi" },
-      { time: "0:55:25", label: "1st Innings: Delhi Dare Strikers restricted to 73/6 in 9 overs" },
-      { time: "1:55:37", label: "Victory Moment: Captain Tushar Sobor finishes the chase with 44*(25) to win by 7 wickets" },
-      { time: "2:03:43", label: "Presentation: Tushar Sobor awarded Man of the Match (44 off 25, 3x4, 2x6)" }
+      { time: "0:19:35", seconds: 1175, label: "Fielding: Mohit Teddy contributes with bat & takes brilliant outfield catch" },
+      { time: "0:25:36", seconds: 1536, label: "Opening Spell: Husamuddin opens bowling with a tight, economical start" },
+      { time: "0:29:43", seconds: 1783, label: "Key Breakthrough: Delhi Captain Pujesh Kapoor dismissed after 25 off 14" },
+      { time: "0:45:56", seconds: 2756, label: "Delhi Middle Order: Deep Kumar anchors the crease in the middle overs" },
+      { time: "0:49:59", seconds: 2999, label: "Wicket: Anand Chetri strikes with crucial breakthrough (1/13)" },
+      { time: "0:50:05", seconds: 3005, label: "Double Wicket: Kamal Gogoi bowls decisive spell taking 2/22 in 2 overs" },
+      { time: "0:50:09", seconds: 3009, label: "Fiery Over: Tipu Sultan delivers sensational spell with 2 wickets for just 1 run (2/1)" },
+      { time: "0:53:13", seconds: 3193, label: "Wicket: Shadab Khan dismissed after hitting a six for Delhi" },
+      { time: "0:55:25", seconds: 3325, label: "1st Innings: Delhi Dare Strikers restricted to 73/6 in 9 overs" },
+      { time: "1:55:37", seconds: 6937, label: "Victory Moment: Captain Tushar Sobor finishes the chase with 44*(25) to win by 7 wickets" },
+      { time: "2:03:43", seconds: 7423, label: "Presentation: Tushar Sobor awarded Man of the Match (44 off 25, 3x4, 2x6)" }
     ],
     image: "/match35-broadcast-action.jpg",
-    video: "/videos/match-35.mp4"
+    video: "https://www.youtube.com/watch?v=P_RFlJYZpXs",
+    youtubeId: "P_RFlJYZpXs",
+    youtubeUrl: "https://www.youtube.com/watch?v=P_RFlJYZpXs",
+    streamTitle: "ISCL SEASON - 1 | DELHI DARE STRIKERS vs HORNBILL TIGERS ( ASSAM ) | MATCH - 35 | DAY - 11"
   },
   {
     id: 2,
     matchNo: "Match 30",
     tournament: "ISCL Season 1",
     date: "Dec 10, 2025",
-    opponent: "Punjab Golden Fighters",
+    opponent: "Royal Punjab",
     venue: "Kini Sports Arena, Bangalore",
     status: "COMPLETED",
-    result: "Punjab Golden Fighters won by 47 runs",
-    score: "Punjab Golden Fighters 88/5 | Hornbill Tigers 41/7",
-    toss: "Punjab Golden Fighters won toss & elected to bat",
+    result: "Royal Punjab won by 47 runs",
+    score: "Royal Punjab 88/5 | Hornbill Tigers 41/7",
+    toss: "Royal Punjab won toss & elected to bat",
     manOfTheMatch: "Mohammad Asif (2 overs, 1 maiden, 2/3)",
     summary: "Punjab set a target of 89 runs at Kini Sports Arena. Their bowling attack delivered a masterclass—becoming the first team in ISCL history to concede zero extra runs. Standout bowling from Happy (4/3), Abdul Rahman (3/12), and Mohammad Asif (2/3) restricted Assam to 41/7.",
     timestamps: [
-      { time: "0:01:56", label: "Toss: Punjab Golden Fighters won toss & elected to bat first" },
-      { time: "1:06:03", label: "Heroics: Mohammad Asif bowls 1 maiden over with 2 wickets" },
-      { time: "1:13:02", label: "1st Innings: Punjab sets a target of 89 runs" },
-      { time: "1:28:26", label: "Zero Extras Milestone: Punjab attack concedes 0 extras" },
-      { time: "1:41:11", label: "Bowling Spells: Happy (4/3) & Abdul Rahman (3/12) strike" },
-      { time: "1:52:41", label: "Match End: Tigers restricted to 41/7; Punjab seals 47-run victory" },
-      { time: "2:01:42", label: "Presentation: Mohammad Asif awarded Man of the Match" }
+      { time: "0:01:56", seconds: 116, label: "Toss: Royal Punjab won toss & elected to bat first" },
+      { time: "1:06:03", seconds: 3963, label: "Heroics: Mohammad Asif bowls 1 maiden over with 2 wickets" },
+      { time: "1:13:02", seconds: 4382, label: "1st Innings: Punjab sets a target of 89 runs" },
+      { time: "1:28:26", seconds: 5306, label: "Zero Extras Milestone: Punjab attack concedes 0 extras" },
+      { time: "1:41:11", seconds: 6071, label: "Bowling Spells: Happy (4/3) & Abdul Rahman (3/12) strike" },
+      { time: "1:52:41", seconds: 6761, label: "Match End: Tigers restricted to 41/7; Punjab seals 47-run victory" },
+      { time: "2:01:42", seconds: 7302, label: "Presentation: Mohammad Asif awarded Man of the Match" }
     ],
-    video: "/videos/match-30.mp4"
+    video: "https://www.youtube.com/watch?v=avipUhpTKuc",
+    youtubeId: "avipUhpTKuc",
+    youtubeUrl: "https://www.youtube.com/watch?v=avipUhpTKuc",
+    streamTitle: "ISCL SEASON - 1 | ROYAL PUNJAB vs HORNBILL TIGERS ( ASSAM ) | MATCH - 30 | DAY - 10"
   },
   {
     id: 3,
@@ -66,15 +72,18 @@ export const fixtures = [
     manOfTheMatch: "Sangam Tiwari (27 runs)",
     summary: "Jharkhand Strikers set a challenging target of 91 led by Sangam Tiwari (27) and Krish Kumar Dubey (21*). Wickets from Srimanta and Tipu Sultan kept Assam in the contest, but tight bowling restricted the Tigers despite fighting knocks from Captain Tushar (17) and Avinash (12).",
     timestamps: [
-      { time: "0:03:14", label: "Toss: Hornbill Tigers won toss & elected to field first" },
-      { time: "0:41:13", label: "Batting: Sangam Tiwari top scores with 27 runs" },
-      { time: "1:00:19", label: "Finish: Krish Kumar Dubey 21* lifts Jharkhand to 90" },
-      { time: "1:08:14", label: "Target Set: Hornbill Tigers require 91 runs to win" },
-      { time: "1:23:49", label: "Captain's Fightback: Tushar scores 17 runs under pressure" },
-      { time: "1:53:36", label: "Match End: Tigers lose 8 wickets, Jharkhand seals victory" },
-      { time: "2:01:42", label: "Presentation: Sangam Tiwari awarded Man of the Match" }
+      { time: "0:03:14", seconds: 194, label: "Toss: Hornbill Tigers won toss & elected to field first" },
+      { time: "0:41:13", seconds: 2473, label: "Batting: Sangam Tiwari top scores with 27 runs" },
+      { time: "1:00:19", seconds: 3619, label: "Finish: Krish Kumar Dubey 21* lifts Jharkhand to 90" },
+      { time: "1:08:14", seconds: 4094, label: "Target Set: Hornbill Tigers require 91 runs to win" },
+      { time: "1:23:49", seconds: 5029, label: "Captain's Fightback: Tushar scores 17 runs under pressure" },
+      { time: "1:53:36", seconds: 6816, label: "Match End: Tigers lose 8 wickets, Jharkhand seals victory" },
+      { time: "2:01:42", seconds: 7302, label: "Presentation: Sangam Tiwari awarded Man of the Match" }
     ],
-    video: "/videos/match-25.mp4"
+    video: "https://www.youtube.com/watch?v=HSdL5xzpTNc",
+    youtubeId: "HSdL5xzpTNc",
+    youtubeUrl: "https://www.youtube.com/watch?v=HSdL5xzpTNc",
+    streamTitle: "ISCL SEASON - 1 | JHARHKAND STRIKERS vs HORNBILL TIGERS ( ASSAM ) | MATCH - 25 | DAY - 9"
   },
   {
     id: 4,
@@ -94,7 +103,7 @@ export const fixtures = [
     tournament: "ISCL Season 1",
     date: "Nov 25, 2026",
     opponent: "Jharkhand Strikers",
-    venue: "Kini Sports Arena, Bangalore",
+    venue: "Acharya Stadium, Bangalore",
     status: "UPCOMING",
     result: null,
     score: null

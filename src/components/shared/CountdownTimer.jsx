@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const CountdownTimer = ({ targetDate, dark = false }) => {
+const CountdownTimer = ({ targetDate, dark = true }) => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   function calculateTimeLeft() {
@@ -30,34 +30,40 @@ const CountdownTimer = ({ targetDate, dark = false }) => {
   };
 
   if (Object.keys(timeLeft).length === 0) {
-    return <span className="font-heading text-2xl text-accent animate-pulse tracking-widest">MATCH LIVE</span>;
+    return (
+      <div className="flex items-center gap-2 py-2 px-4 rounded-xl bg-accent/10 border border-accent/30">
+        <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping"></span>
+        <span className="font-heading text-xl md:text-2xl text-accent tracking-widest uppercase">MATCH IN PROGRESS</span>
+      </div>
+    );
   }
 
-  const numberClass = `font-heading text-2xl sm:text-3xl md:text-4xl ${dark ? 'text-white' : 'text-ink'}`;
-  const labelClass = `font-body text-[8px] sm:text-[10px] uppercase font-semibold tracking-wider ${dark ? 'text-white/50' : 'text-gray-500'}`;
-  const colonClass = `font-heading text-xl sm:text-2xl md:text-3xl mt-1 ${dark ? 'text-white/20' : 'text-gray-300'}`;
+  const timeUnits = [
+    { label: 'Days', value: formatNumber(timeLeft.days), isSec: false },
+    { label: 'Hrs', value: formatNumber(timeLeft.hours), isSec: false },
+    { label: 'Min', value: formatNumber(timeLeft.minutes), isSec: false },
+    { label: 'Sec', value: formatNumber(timeLeft.seconds), isSec: true },
+  ];
 
   return (
-    <div className="flex gap-3 sm:gap-4 md:gap-5">
-      <div className="flex flex-col items-center">
-        <span className={numberClass}>{formatNumber(timeLeft.days)}</span>
-        <span className={labelClass}>Days</span>
-      </div>
-      <span className={colonClass}>:</span>
-      <div className="flex flex-col items-center">
-        <span className={numberClass}>{formatNumber(timeLeft.hours)}</span>
-        <span className={labelClass}>Hrs</span>
-      </div>
-      <span className={colonClass}>:</span>
-      <div className="flex flex-col items-center">
-        <span className={numberClass}>{formatNumber(timeLeft.minutes)}</span>
-        <span className={labelClass}>Min</span>
-      </div>
-      <span className={colonClass}>:</span>
-      <div className="flex flex-col items-center">
-        <span className="font-heading text-2xl sm:text-3xl md:text-4xl text-accent">{formatNumber(timeLeft.seconds)}</span>
-        <span className="font-body text-[8px] sm:text-[10px] uppercase text-accent font-semibold tracking-wider">Sec</span>
-      </div>
+    <div className="flex items-center justify-center gap-2 sm:gap-2.5 w-full">
+      {timeUnits.map((unit, idx) => (
+        <div key={unit.label} className="flex items-center gap-2 sm:gap-2.5">
+          <div className="flex flex-col items-center justify-center bg-black/60 backdrop-blur-md border border-white/10 rounded-xl px-3 sm:px-4 py-2 sm:py-2.5 min-w-[58px] sm:min-w-[68px] shadow-inner group-hover:border-accent/30 transition-colors">
+            <span className={`font-heading text-2xl sm:text-3xl md:text-4xl tracking-wider tabular-nums leading-none ${unit.isSec ? 'text-accent' : 'text-white'}`}>
+              {unit.value}
+            </span>
+            <span className={`font-body text-[8px] sm:text-[9px] uppercase font-semibold tracking-widest mt-1 ${unit.isSec ? 'text-accent/80' : 'text-white/50'}`}>
+              {unit.label}
+            </span>
+          </div>
+          {idx < timeUnits.length - 1 && (
+            <span className="font-heading text-xl sm:text-2xl text-accent/40 select-none -mt-3">
+              :
+            </span>
+          )}
+        </div>
+      ))}
     </div>
   );
 };
