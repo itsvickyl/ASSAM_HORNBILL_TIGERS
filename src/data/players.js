@@ -1,6 +1,40 @@
 export const players = [
   {
     id: 1,
+    name: "Tushar Sobor",
+    isCaptain: true,
+    number: "23",
+    role: "All-Rounder (Captain)",
+    battingStyle: "Right-hand bat",
+    bowlingStyle: "Right-arm fast",
+    matches: 3,
+    runs: 61,
+    wickets: 1,
+    strikeRate: 164.8,
+    economy: 7.5,
+    honors: "Captain & Man of the Match — Match 35 (44* off 25 balls vs Delhi)",
+    image: "/players/TUSHAL SOBOR.png",
+    bio: "Inspirational captain of the Assam Hornbill Tigers. Awarded Man of the Match in Match 35 for his match-winning knock of 44* off 25 balls (3 fours, 2 sixes) to chase down 74 against Delhi Dare Strikers, scoring 61 total runs across Season 1."
+  },
+  {
+    id: 2,
+    name: "Tipu Sultan",
+    isViceCaptain: true,
+    number: "07",
+    role: "All-Rounder (Vice-Captain)",
+    battingStyle: "Left-hand bat",
+    bowlingStyle: "Right-arm fast",
+    matches: 3,
+    runs: 18,
+    wickets: 4,
+    strikeRate: 145.0,
+    economy: 5.6,
+    honors: "Vice-Captain & Best Spell — Match 35 (2 wkts for 1 run in 1 over)",
+    image: "/players/TIPU SULTAN.png",
+    bio: "Vice-Captain and fiery fast-bowling all-rounder who delivered ISCL Season 1's most devastating bowling spell in Match 35, taking 2 wickets for just 1 run (2/1 in 1 ov) against Delhi Dare Strikers, and 2 wickets vs Jharkhand."
+  },
+  {
+    id: 3,
     name: "Abinash Haloi",
     number: "10",
     role: "Batter",
@@ -15,7 +49,7 @@ export const players = [
     bio: "Solid top-order batter who contributed 12 runs against Jharkhand Strikers and opened the innings throughout ISCL Season 1."
   },
   {
-    id: 2,
+    id: 4,
     name: "Anand Chetry",
     number: "24",
     role: "All-Rounder",
@@ -30,7 +64,7 @@ export const players = [
     bio: "Dynamic spin-bowling all-rounder who broke Delhi Dare Strikers' middle order with a crucial 1/13 spell in Match 35."
   },
   {
-    id: 3,
+    id: 5,
     name: "Ashik Ali",
     number: "7",
     role: "Batter",
@@ -45,7 +79,7 @@ export const players = [
     bio: "Aggressive middle-order striker who provided vital lower-order acceleration during the Season 1 campaign."
   },
   {
-    id: 4,
+    id: 6,
     name: "Dhyan Sonowal",
     number: "99",
     role: "Bowler",
@@ -60,7 +94,7 @@ export const players = [
     bio: "Young pace sensation who generated sharp bounce and steep pace under floodlights at Kini Sports Arena."
   },
   {
-    id: 5,
+    id: 7,
     name: "Farhad Hasan",
     number: "12",
     role: "Batter",
@@ -75,7 +109,7 @@ export const players = [
     bio: "Left-handed opening batter known for clean footwork, timing, and composure against new-ball attacks."
   },
   {
-    id: 6,
+    id: 8,
     name: "Hussam Uddin",
     number: "18",
     role: "Bowler / Wicket Keeper",
@@ -90,7 +124,7 @@ export const players = [
     bio: "Opened the bowling attack in Match 35 vs Delhi Dare Strikers with an ultra-disciplined and economical spell under pressure."
   },
   {
-    id: 7,
+    id: 9,
     name: "Jintu Ahmed",
     number: "45",
     role: "All-Rounder",
@@ -105,7 +139,7 @@ export const players = [
     bio: "Vocal on-field leader offering seam bowling versatility and aggressive lower-order batting options."
   },
   {
-    id: 8,
+    id: 10,
     name: "Kamal Gogoi",
     number: "14",
     role: "Bowler",
@@ -120,7 +154,7 @@ export const players = [
     bio: "Decisive bowler who delivered a match-turning spell taking 2 wickets for 22 runs in 2 overs against Delhi Dare Strikers in Match 35."
   },
   {
-    id: 9,
+    id: 11,
     name: "Khanindra Choudhury",
     number: "8",
     role: "Bowler",
@@ -135,7 +169,7 @@ export const players = [
     bio: "Experienced left-arm seamer who generated swing in the powerplay and provided early breakthroughs."
   },
   {
-    id: 10,
+    id: 12,
     name: "Motinur Islam",
     number: "9",
     role: "Wicket Keeper",
@@ -150,7 +184,7 @@ export const players = [
     bio: "Counter-attacking wicketkeeper-batter capable of sharp glovework and brisk lower-order runs."
   },
   {
-    id: 11,
+    id: 13,
     name: "Nasim Khan",
     number: "11",
     role: "Bowler",
@@ -165,7 +199,7 @@ export const players = [
     bio: "Talented wrist-spinner with a dangerous googly and tight control over line and length."
   },
   {
-    id: 12,
+    id: 14,
     name: "Rajikul Islam",
     number: "5",
     role: "All-Rounder",
@@ -180,7 +214,7 @@ export const players = [
     bio: "Versatile all-rounder who can break partnerships and clear the ropes in crunch match situations."
   },
   {
-    id: 13,
+    id: 15,
     name: "Sahid Ali",
     number: "22",
     role: "Batter",
@@ -195,7 +229,7 @@ export const players = [
     bio: "Top-order batsman recognized for his composure, compact technique, and match situation awareness."
   },
   {
-    id: 14,
+    id: 16,
     name: "Srimanta",
     number: "88",
     role: "Bowler",
@@ -208,37 +242,5 @@ export const players = [
     economy: 6.2,
     image: "/players/SRIMANTA.png",
     bio: "Disciplined medium-pacer who claimed 2 key wickets against Jharkhand Strikers to keep the Tigers competitive."
-  },
-  {
-    id: 15,
-    name: "Tipu Sultan",
-    number: "07",
-    role: "All-Rounder",
-    battingStyle: "Left-hand bat",
-    bowlingStyle: "Right-arm fast",
-    matches: 3,
-    runs: 18,
-    wickets: 4,
-    strikeRate: 145.0,
-    economy: 5.6,
-    image: "/players/TIPU SULTAN.png",
-    bio: "Fiery fast-bowling all-rounder who delivered one of ISCL Season 1's most devastating spells in Match 35, taking 2 wickets for just 1 run (2/1 in 1 ov) against Delhi Dare Strikers, and 2 wickets vs Jharkhand."
-  },
-  {
-    id: 16,
-    name: "Tushar Sobor",
-    isCaptain: true,
-    number: "23",
-    role: "All-Rounder (Captain)",
-    battingStyle: "Right-hand bat",
-    bowlingStyle: "Right-arm fast",
-    matches: 3,
-    runs: 61,
-    wickets: 1,
-    strikeRate: 164.8,
-    economy: 7.5,
-    honors: "Man of the Match — ISCL Season 1 Match 35 (44* off 25 balls vs Delhi)",
-    image: "/players/TUSHAL SOBOR.png",
-    bio: "Inspirational captain of the Assam Hornbill Tigers. Awarded Man of the Match in Match 35 for his match-winning knock of 44* off 25 balls (3 fours, 2 sixes) to chase down 74 against Delhi Dare Strikers, scoring 61 total runs across Season 1."
   }
 ];

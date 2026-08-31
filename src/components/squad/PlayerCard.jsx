@@ -18,6 +18,12 @@ const PlayerCard = ({ player, onClick }) => {
           ★ CAPTAIN
         </div>
       )}
+
+      {player.isViceCaptain && (
+        <div className="absolute top-4 left-4 bg-[#1a0000] text-accent font-heading text-xs uppercase tracking-widest font-bold px-2.5 py-1 rounded-md shadow-lg border border-accent/40 z-10">
+          ★ VICE CAPTAIN
+        </div>
+      )}
       
       <div className="absolute top-4 right-4 bg-primary text-accent font-heading text-2xl w-12 h-12 flex items-center justify-center rounded-full shadow-lg border border-accent/20">
         {player.number}
