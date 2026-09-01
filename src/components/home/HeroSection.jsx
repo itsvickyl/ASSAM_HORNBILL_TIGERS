@@ -43,7 +43,7 @@ const HeroSection = ({ onOpenTickets }) => {
           
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-6 md:mt-8 pointer-events-auto">
             <Link to="/squad">
-              <Button variant="outline" className="w-full sm:w-auto">View Squad</Button>
+              <Button variant="outline" className="w-full sm:w-auto">Meet The Hunters</Button>
             </Link>
             <div onClick={onOpenTickets}>
               <Button variant="primary" className="w-full sm:w-auto">Buy Tickets</Button>

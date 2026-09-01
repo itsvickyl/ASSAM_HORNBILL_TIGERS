@@ -54,10 +54,10 @@ const SquadRoster = () => {
             <div>
               <span className="text-accent font-body text-xs uppercase tracking-[0.3em] font-semibold">Season 2026</span>
               <h1 className="font-heading text-4xl sm:text-5xl md:text-display text-white uppercase tracking-editorial mt-1">
-                THE VANGUARD SQUAD
+                THE HUNTERS
               </h1>
               <p className="font-body text-xs sm:text-sm text-gray-300 max-w-xl mt-2 font-light">
-                Meet the warriors representing the Assam Hornbill Tigers. Click any player profile for complete statistics and bio.
+                Meet the hunters representing the Assam Hornbill Tigers. Click any player profile for complete statistics and bio.
               </p>
             </div>
 

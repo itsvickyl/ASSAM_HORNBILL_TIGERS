@@ -18,8 +18,8 @@ const Layout = () => {
       description: 'Welcome to the official home of the Assam Hornbill Tigers cricket franchise. Get the latest match highlights, player profiles, season fixtures, team history, and exclusive fan content.'
     },
     '/squad': {
-      title: 'The Vanguard | Assam Hornbill Tigers Squad Roster',
-      description: 'Explore the player profiles of the Assam Hornbill Tigers. View technical batting/bowling styles, career stats, and bios of the squad.'
+      title: 'The Hunters | Assam Hornbill Tigers Squad Roster',
+      description: 'Explore the player profiles of the Assam Hornbill Tigers. View technical batting/bowling styles, career stats, and bios of The Hunters.'
     },
     '/matches': {
       title: 'Match Center & Standings | Assam Hornbill Tigers',

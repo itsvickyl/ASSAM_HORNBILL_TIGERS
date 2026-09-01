@@ -6,7 +6,7 @@ const footerLinks = [
   {
     title: 'Quick Links',
     links: [
-      { label: 'The Squad', to: '/squad' },
+      { label: 'The Hunters', to: '/squad' },
       { label: 'Team History', to: '/history' },
       { label: 'Official Sponsors', href: '/#sponsors' },
       { label: 'ISCL Official Website', href: 'https://isclcricket.in/', external: true, accent: true },

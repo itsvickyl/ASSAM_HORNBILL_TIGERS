@@ -35,7 +35,7 @@ const Navbar = ({ onOpenTickets }) => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Squad', path: '/squad' },
+    { name: 'The Hunters', path: '/squad' },
     { name: 'Matches', path: '/matches' },
     { name: 'Den', path: '/den' },
     { name: 'History', path: '/history' },
