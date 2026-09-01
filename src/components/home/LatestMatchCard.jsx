@@ -5,7 +5,7 @@ import { fixtures } from '../../data/fixtures';
 const LatestMatchCard = ({ onOpenTickets }) => {
   const upcomingFixture = fixtures.find(f => f.status === 'UPCOMING') || {
     matchNo: 'Match 42',
-    tournament: 'ISCL Season 1',
+    tournament: 'ISCL Season 2',
     venue: 'Acharya Stadium, Bangalore',
     date: 'Nov 25, 2026'
   };
@@ -48,7 +48,7 @@ const LatestMatchCard = ({ onOpenTickets }) => {
             </span>
           </div>
           <span className="font-body text-[10px] text-black uppercase tracking-widest bg-accent px-2.5 py-0.5 rounded font-bold shadow-sm">
-            ISCL Season 1
+            ISCL Season 2
           </span>
         </div>
         
@@ -70,7 +70,7 @@ const LatestMatchCard = ({ onOpenTickets }) => {
             Assam Hornbill Tigers
           </h3>
           <p className="font-body text-[11px] text-accent/90 uppercase tracking-[0.18em] font-medium mt-0.5">
-            Official ISCL Championship Match
+            Official ISCL Season 2 Match
           </p>
         </div>
         
